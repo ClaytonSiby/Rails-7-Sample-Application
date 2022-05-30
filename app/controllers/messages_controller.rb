@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  before_action :set room, only: %i[new create]
+  before_action :set_room, only: %i[new create]
 
   def new
     @message = @room.messages.new
